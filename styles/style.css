@@ -1,0 +1,20 @@
+@import url('reset.css');
+@import url('menu__lateral.css');
+@import url('footer.css');
+
+
+:root{
+    --preto: #000;
+    --preto2: #121212;
+    --preto3: #242424;
+    --branco: #FFF;
+    --cinza: #B3B3B3;
+    --fonte-principal: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: var(--preto);
+    color: var(--branco);
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+}
