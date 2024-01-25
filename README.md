@@ -19,5 +19,5 @@
 
 ### Gabriel Pereira
 
-### Link da prévia:
+### Link da prévia: https://gabrielpereira360.github.io/imersao_frontend/
 ### Linkedin: https://www.linkedin.com/in/gabriel-martins2003/
