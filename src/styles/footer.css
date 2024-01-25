@@ -6,8 +6,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(196, 41, 196), rgb(21, 142, 255));
-    padding: 15px;
+    background-image: linear-gradient(to right, rgb(196, 41, 196), rgb(91, 176, 254));
+    padding: 10px 15px;
     margin: 10px;
     font-family: var(--fonte-principal);
 }

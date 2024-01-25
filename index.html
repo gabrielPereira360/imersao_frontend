@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Imersão</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
@@ -17,7 +17,7 @@
         <nav class="sidebar__navigation">
             <div class="sidebar__logo">
                 <a href="#">
-                    <img src="./assets/icons/logo-spotify.png" alt="Logo do Spotify branco">
+                    <img src="./src/assets/icons/logo-spotify.png" alt="Logo do Spotify branco">
                 </a>
             </div>
             <ul>
@@ -45,24 +45,26 @@
                 <span class="fa fa-plus">
             </div>
 
-            <div class="suggestion">
-                <div class="suggestion__content">
-                    <span class="text title">Crie sua primeira playlist</span>
-                    <span class="text subtitle">É fácil, vamos te ajudar.</span>
-                    <button class="suggestion__btn">
-                        <span>Criar playlist</span>
-                    </a>
+            <div class="scroll">
+                <div class="suggestion">
+                    <div class="suggestion__content">
+                        <span class="text title">Crie sua primeira playlist</span>
+                        <span class="text subtitle">É fácil, vamos te ajudar.</span>
+                        <button class="suggestion__btn">
+                            <span>Criar playlist</span>
+                            </a>
+                    </div>
+                </div>
+                <div class="suggestion">
+                    <div class="suggestion__content">
+                        <span class="text title">Que tal seguir um podcast novo?</span>
+                        <span class="text subtitle">Avisaremmos você sobre novos episódio.</span>
+                        <button class="suggestion__btn">
+                            <span>Explore podcasts</span>
+                            </a>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="suggestion">
-                <div class="suggestion__content">
-                    <span class="text title">Que tal seguir um podcast novo?</span>
-                    <span class="text subtitle">Avisaremmos você sobre novos episódio.</span>
-                    <button class="suggestion__btn">
-                        <span>Explore podcasts</span>
-                    </a>
-                </div>
-            </div> -->
 
             <div class="cookies">
                 <a href="#">Cookies</a>
@@ -75,14 +77,47 @@
                 </button>
             </div>
         </div>
-
-
     </div>
+
+    <main>
+        <div class="main__container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="src/assets/icons/small-left.png" alt="seta da esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="src/assets/icons/small-right.png" alt="seta da direita">
+                    </button>
+                </div>
+                <div class="links_btn">
+                    <a href="#">
+                        <span>Premium</span>
+                    </a>
+                    <a href="#">
+                        <span>Suporte</span>
+                    </a>
+                    <a href="#">
+                        <span>Baixar</span>
+                    </a>
+                    <div class="white-line"></div>
+                    <button class="btn-link inscrever">
+                        <span>Inscreva-se</span>
+                    </button>
+                    <button class="btn-link entrar">
+                        <span>Entrar</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </main>
+
 
     <footer class="footer__container">
         <div class="footer__content">
             <span class="text title">Testar o Premium de graça</span>
-            <span class="text subtitle">Inscreva-se para curtir música ilimitadae podcastssó com alguns anúncios. Não precisa de cartão de crédito.</span>
+            <span class="text subtitle">Inscreva-se para curtir música ilimitadae podcastssó com alguns anúncios. Não
+                precisa de cartão de crédito.</span>
         </div>
         <button class="subscribe">
             <span>Inscreva-se grátis</span>
