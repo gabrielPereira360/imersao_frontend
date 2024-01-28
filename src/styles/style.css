@@ -4,7 +4,7 @@
 @import url('footer.css');
 
 
-:root{
+:root {
     --preto: #000;
     --preto2: #121212;
     --preto3: #242424;
@@ -20,4 +20,20 @@ body {
     color: var(--branco);
     font-size: 16px;
     font-family: var(--fonte-principal);
+}
+
+html ::-webkit-scrollbar {
+    width: 12px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background: var(--preto3);
+} 
+
+html ::-webkit-scrollbar-track {
+    background: var(--preto2);
+}
+
+.hidden{
+    display: none;
 }

@@ -52,11 +52,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 8px 8px calc(100vh - 157px - 70px - 505px) 8px;
+    padding: 8px 8px 26px 8px;
+    height: 68vh;
     color: var(--cinza);
     font-weight: 600;
     margin: 10px 0;
-    max-height: 60vh;
 }
 
 .sidebar__library .library {
@@ -150,10 +150,16 @@
     opacity: 0.9;
 }
 
-.sidebar .cookies{
-    margin: 15px 20px;
+
+.sidebar .links{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px
 }
-.sidebar .cookies a{
+
+.sidebar .links a{
     text-decoration: none;
     text-transform: none;
     font-size: 12px;
@@ -161,12 +167,19 @@
     font-weight: 500;
 }
 
-.sidebar .cookies a:hover{
+.sidebar .links a:hover{
     text-decoration: underline;
 }
 
+#privacy{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
 .languages{
-    margin: 10px 20px 0 20px;
+    margin: 50px 20px 0 20px;
 }
 
 .languages .languages__btn{
