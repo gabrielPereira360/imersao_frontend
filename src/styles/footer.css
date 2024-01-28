@@ -48,14 +48,14 @@ footer{
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1400px) {
 
     .footer__links__container{
         gap: 50px;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1140px) {
 
     footer{
         display: none;
