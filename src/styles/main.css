@@ -120,17 +120,19 @@ main {
 /* CARDS */
 
 .offer__scroll {
+    display: flex;
+    flex-direction: column;
     padding: 16px;
     background-color: var(--preto2);
     border-radius: 0 0 8px 8px;
     margin: 0 10px 10px 10px;
     overflow-y: auto;
     height: calc(100vh - 194px);
-
 }
 
 .offer__cards {
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .offer__title {
@@ -160,12 +162,17 @@ main {
     text-decoration: underline;
 }
 
+.card__container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 .card__content {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    max-height: 72.5vh;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .result-artist {
@@ -189,6 +196,7 @@ main {
     border-radius: 8px;
     padding: 10px;
     transition: 0.3s;
+    cursor: default;
 }
 
 .card-img .play-spotify {
@@ -201,6 +209,10 @@ main {
     height: 50px;
     background-size: 50px;
     transition: 0.5s;
+}
+
+.play-spotify{
+    cursor: pointer;
 }
 
 .cards:hover>.card-img>.play-spotify,
@@ -257,7 +269,8 @@ main {
 }
 
 .offer__footer {
-    padding: 50px 10px;
+    margin-top: 80px;
+    padding: 10px;
 }
 
 .offer__footer__container {
@@ -337,13 +350,13 @@ main {
     color: var(--cinza);
 }
 
-.languages{
+.languages__links{
     display: none;
 }
 
 @media screen and (max-width: 1400px) {
     .search {
-        width: 160px;
+        width: 200px;
     }
 
     .search input::placeholder {
@@ -372,13 +385,11 @@ main {
         bottom: 145px;
         right: 25px;
     }
-
 }
 
 @media screen and (max-width: 1140px) {
 
     main{
-        max-width: initial;
         width: 100vw;
         margin-left: 0;
         margin-top: 60px;
@@ -392,13 +403,6 @@ main {
     .offer__scroll{
         margin: 0;
         height: auto;
-        overflow-y: hidden;
-    }
-
-    .card__container{
-        display: flex;
-        flex-direction: column;
-        gap: 200px;
     }
 
     .header__navigation{
@@ -409,11 +413,15 @@ main {
     }
 
     .search{
-        width: 300px;
+        width: 350px;
     }
 
     .search input::placeholder{
         font-size: 12px;
+    }
+
+    .card__content{
+        margin-left: auto;
     }
 
     .card-img .play-spotify{
@@ -422,10 +430,6 @@ main {
 }
 
 @media screen and (max-width: 800px) {
-
-    .offer__cards {
-        margin-bottom: 150px;
-    }
 
     .card__content {
         justify-content: center;
@@ -447,25 +451,24 @@ main {
         height: 45px;
         background-size: 45px;
     }
-    
-    .offer__footer{
-        margin-top: 200px;
-    }
-
 }
 
 
 @media screen and (max-width: 400px) {
     .search {
-        width: 250px;
+        width: 220px;
     }
 
     .card__container {
         gap: 50px;
     }
 
-    .card__content{
-        justify-content: center;
+    .offer__title h3{
+        font-size: 20px;
+    }
+
+    .card-desc h3 {
+        font-size: 14px;
     }
 
     .cards, .artist-card {
@@ -476,13 +479,12 @@ main {
     .card-img img {
          width: 90px;
     }
-
-    .card-desc span{
-        display: none;
-    }
-
+    
     .card-desc{
         text-align: center;
+    }
+    .card-desc span{
+        display: none;
     }
 
     .card-img .play-spotify{
@@ -493,9 +495,8 @@ main {
         background-size: 35px;
     }
 
-    .offer__footer,
-    .offer__cards{
-        margin: 0;
+    .offer__footer{
+        padding: 0;
     }
 
     .offer__footer__container {
@@ -536,11 +537,12 @@ main {
     }
     
     
-    .languages{
-        margin: 30px 0 0 0;
+    .languages__links{
+        display: block;
+        margin: 30px 0;
     }
     
-    .languages .languages__btn{
+    .languages__links .languages__btn{
         display: flex;
         justify-content: center;
         align-items: center;
