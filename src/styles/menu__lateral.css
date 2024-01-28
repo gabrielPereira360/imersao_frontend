@@ -20,7 +20,7 @@
 .logo__spotify{
     width: 100px;
     height: 30px;
-    background-image: url("../assets/icons/logo-spotify.png") no-repeat;;
+    background: url("../assets/icons/logo-spotify.png") no-repeat;;
     background-size: 80px;
 }
 
