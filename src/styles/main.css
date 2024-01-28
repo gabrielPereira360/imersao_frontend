@@ -406,6 +406,18 @@ main {
     }
 }
 
+@media screen and (max-width: 840px) {
+
+    .card__container {
+        gap: 400px;
+    }
+
+    .offer__footer {
+      margin-top: 350px;
+    }
+
+}
+
 
 @media screen and (max-width: 768px) and (orientation: portrait){
     .card__content{
@@ -495,5 +507,31 @@ main {
         right: 15px;
     }
 }
+
+@media screen and (max-width: 320px) {
+
+    .cards, .artist-card {
+        width: 100px;
+        height: 200px;
+    }
+
+    .card-img img {
+        width: 100px;
+    }
+
+    .card-desc span {
+        font-size: 12px;
+        -webkit-line-clamp: 3; /* numero de linhas a ser mostrado */
+    }
+
+    .card__container {
+        gap: 120px;
+    }
+
+    .offer__footer {
+        margin-top: 100px;
+    }
+}
+
 
 
