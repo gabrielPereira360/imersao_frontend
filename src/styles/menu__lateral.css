@@ -13,8 +13,15 @@
     padding: 20px 20px 10px 20px;
 }
 
-.sidebar__logo img {
-    width: 80px;
+.sidebar .links_btn{
+    display: none;
+}
+
+.logo__spotify{
+    width: 100px;
+    height: 30px;
+    background-image: url("../assets/icons/logo-spotify.png") no-repeat;;
+    background-size: 80px;
 }
 
 .sidebar__logo {
@@ -91,6 +98,11 @@
     margin: 24px 10px;
     cursor: pointer;
 }
+
+.scroll{
+    overflow-y: hidden;
+}
+
 
 .suggestion {
     display: flex;
@@ -197,3 +209,77 @@
     transition: 0.2s;
 }
 
+@media screen and (max-width: 1280px) {
+    .scroll{
+        overflow-y: auto;
+        max-height: 230px;
+    }
+
+    .scroll::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .sidebar__library{
+        padding: 8px 8px 50px 8px;
+        height: 63vh;
+    }
+
+    .languages{
+        margin: 20px 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0;
+        width: 100vw;
+        height: 60px;
+        z-index: 4;
+    }
+
+    .sidebar__navigation{
+        background-color: var(--preto);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        border-radius: 0;
+        padding: 10px 15px;
+        height: 35px;
+    }
+
+    .logo__spotify{ 
+        margin-top: 10px;
+        width: 35px;
+        height: 35px;
+        background: url('../assets/icons/logo-spotify-white.png') no-repeat;
+        background-size: 35px;
+    }
+
+    .sidebar ul li{
+        display: none;
+    }
+
+    .sidebar__library{
+        display: none;
+    }
+
+    .sidebar .links_btn{
+        margin-left: auto;
+        display: block;
+    }
+
+    .sidebar .links_btn button{
+        width: 100px;
+        padding: 5px 10px;
+    }
+
+    .sidebar .links_btn button span{
+        font-size: 12px;
+        margin: 0;
+    }
+
+}
