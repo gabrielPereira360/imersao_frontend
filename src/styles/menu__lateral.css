@@ -63,6 +63,7 @@
     font-weight: 600;
     margin: 10px 0;
     height: calc(100vh - 296px);
+    overflow-y: auto;
 }
 
 
